@@ -4,12 +4,16 @@ import { TN_DISTRICTS } from "@/data/districts";
 import { useDistrictFilter } from "@/hooks/useDistrictFilter";
 import { GlassCard } from "@/components/layout/GlassCard";
 
+
 export function StaffPressureChart() {
   const { selectedDistrict } = useDistrictFilter();
 
   const data = STAFF_DATA
     .filter(s => selectedDistrict === "all" || s.district === selectedDistrict)
     .map(s => {
+         .map(s => {
+      const d = TN_DISTRICTS.find(dd => dd.id === s.district);
+      return {
       const d = TN_DISTRICTS.find(dd => dd.id === s.district);
       return {
         name: d?.name.slice(0, 8) ?? s.district,
