@@ -2,7 +2,11 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { useDistrictFilter } from "@/hooks/useDistrictFilter";
 import { getHospitalCapacity } from "@/services/dataService";
 import { GlassCard } from "@/components/layout/GlassCard";
-
+className={cn(
+        "glass rounded-xl p-6 transition-all duration-300",
+        glow && "neon-border",
+        className
+      )}
 /**
  * Bed Availability Trend — 7-day projection
  * Rule: Gradual daily change based on admission/discharge cycle
