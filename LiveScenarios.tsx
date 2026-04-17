@@ -7,7 +7,7 @@ interface Scenario {
   name: string;
   icon: React.ReactNode;
   description: string;
-  district: string;
+  district: string;. jlbj
   effects: { label: string; change: string }[];
 }
 
