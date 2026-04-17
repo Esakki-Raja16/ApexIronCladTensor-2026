@@ -1,3 +1,6 @@
+# ==================================================
+# Logs
+# ==================================================
 logs
 *.log
 npm-debug.log*
@@ -6,26 +9,109 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-.output
-.vinxi
+# ==================================================
+# Node / Frontend
+# ==================================================
+node_modules/
+dist/
+dist-ssr/
+.output/
+.vinxi/
 .tanstack/**
-.nitro
+.nitro/
+coverage/
+*.tsbuildinfo
+
+# ==================================================
+# Environment / Secrets
+# ==================================================
+.env
+.env.*
+!.env.example
+.dev.vars
 *.local
 
-# Wrangler / Cloudflare
-.wrangler/
-.dev.vars
+# ==================================================
+# Python / ML
+# ==================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+venv/
+.envvenv/
+.venv/
+pip-wheel-metadata/
+*.egg-info/
 
+# ==================================================
+# ML Models / Training Outputs
+# ==================================================
+models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# ==================================================
+# Datasets (optional private data)
+# ==================================================
+data/
+datasets/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# If you want sample public CSVs committed, remove *.csv
+
+# ==================================================
+# Jupyter
+# ==================================================
+.ipynb_checkpoints/
+
+# ==================================================
+# Backend Temp / Cache
+# ==================================================
+.cache/
+tmp/
+temp/
+uploads/
+exports/
+
+# ==================================================
+# Databases
+# ==================================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==================================================
+# Cloud / Deployment
+# ==================================================
+.wrangler/
+.vercel/
+.netlify/
+.serverless/
+
+# ==================================================
 # Editor directories and files
+# ==================================================
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+
+# ==================================================
+# OS Files
+# ==================================================
+.DS_Store
+Thumbs.db
+desktop.ini
