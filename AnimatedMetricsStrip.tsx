@@ -8,7 +8,6 @@ const metrics = [
   { label: "Healthcare Workers", value: "92,000+" },
   { label: "Govt Hospitals", value: "1,264" },
   { label: "Govt Hospitals", value: "1,264" },
-  { label: "Govt Hospitals", value: "1,264" },
 ];
 
 export function AnimatedMetricsStrip() {
