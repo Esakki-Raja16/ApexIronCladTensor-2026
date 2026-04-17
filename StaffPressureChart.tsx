@@ -11,6 +11,9 @@ export function StaffPressureChart() {
   const data = STAFF_DATA
     .filter(s => selectedDistrict === "all" || s.district === selectedDistrict)
     .map(s => {
+      nst data = STAFF_DATA
+    .filter(s => selectedDistrict === "all" || s.district === selectedDistrict)
+    .map(s => {
          .map(s => {
       const d = TN_DISTRICTS.find(dd => dd.id === s.district);
       return {
