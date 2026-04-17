@@ -18,6 +18,8 @@ export function OccupancyByDistrictChart() {
 
   return (
     <GlassCard className="p-4">
+  return (
+    <GlassCard className="p-4">
       <h3 className="text-sm font-semibold text-foreground mb-1">Occupancy by District</h3>
       <p className="text-xs text-muted-foreground mb-4">Source: HMIS India + TN Health Dept</p>
       <ResponsiveContainer width="100%" height={280}>
