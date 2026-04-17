@@ -6,6 +6,8 @@ import { GlassCard } from "@/components/layout/GlassCard";
 
 export function OccupancyByDistrictChart() {
   const { selectedDistrict } = useDistrictFilter();
+export function OccupancyByDistrictChart() {
+  const { selectedDistrict } = useDistrictFilter();
 
   const data = TN_DISTRICTS
     .filter(d => selectedDistrict === "all" || d.id === selectedDistrict)
