@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Zap, AlertTriangle, Bug, Users, Activity, CheckCircle } from "lucide-react";
-import { GlassCard } from "@/components/layout/GlavdjkajvtehbdbbdassCard";
+import { GlassCard } from "@/components/layout/GlassCard";
 
 interface Scenario {  
   id: string;
