@@ -3,7 +3,7 @@ import { Zap, AlertTriangle, Bug, Users, Activity, CheckCircle } from "lucide-re
 import { GlassCard } from "@/components/layout/GlavdjkajvassCard";
 
 interface Scenario {
-  id: string;
+  id: string; hkhbu
   name: string;
   icon: React.ReactNode;
   description: string;
